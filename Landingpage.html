@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>E/V Temp Prediction</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+        <h1 style="font-size: 30px; font-style: italic; font-weight: bold; color: rgb(255, 253, 253); background-color: rgb(255, 255, 255); text-align: 
+                center; background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg); text-decoration-color: lawngreen;">MOTOR TEMPERATURE PREDICTION USING MACHINE LEARNING</h1>
+
+         <h2 style="font-size: 17px; font-family: 'Times New Roman', Georgia, 'Times New Roman', Times, serif; color: rgb(255, 255, 255); align-self: auto;
+                        font-weight: normal;" >With the increasingly serious problems of environmental pollution and energy shortage, electric vehicles have a promising future. As a core component of electric vehicles, the drive motor is developing towards high power density of which remains temperature rise problems, 
+                        which affects the performance, efficiency and in order to achieve the maximum power output and a long life - span for the battery, So its important to maintain the motor temperature within an ideal range of between 20 and 30 degrees Celsius (68 and 86 degrees Fahrenheit).</h2>
+
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h2 style="font-size: 30px; font-style: italic; color: rgb(255, 255, 255); background-color: rgb(38, 228, 228); text-align: 
+                 center;font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif; background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg);">Please Enter The Required Inputs</h2>
+        
+    <body background="https://www.steerev.com/wp-content/uploads/2019/11/electric_car_range.jpg" 
+        style="background-size: 100%">
+
+        
+        <form action="/submit" method="post">
+            <div class="container-fluid">
+            <div> <input type="number" name="Ambient temp" placeholder="Ambient temp (in °C)" required='required' autocomplete="off">
+            <input type="number" name="Coolant_temp" placeholder="Coolant temp (in °C)" required='required' autocomplete="off">
+            <input type="number" name="Current_d_component"placeholder="Current d-component" required='required' autocomplete="off">
+            <input type="number" name="Current_q_component" placeholder="Current q-component" required='required' autocomplete="off">
+            <input type="number" name="Motor_speed" placeholder="Motor speed (in rpm)" required='required' autocomplete="off"></div>
+            <div> </div> <br>
+            <input type="number" name="Permanent_magnet" placeholder="Permanent magnet temp(in °C)" required='required' autocomplete="off">
+            <input type="number" name="Motor_torque" placeholder="Motor torque (in Nm)" required='required' autocomplete="off">
+            <input type="number" name="Voltage_d1" placeholder="Voltage d-component" required='required' autocomplete="off">
+            <input type="number" name="Voltage_q1" placeholder="Voltage q-component(in V)" required='required' autocomplete="off">
+
+            <BUtton type="submit" style="background-color: rgb(64, 255, 6); font-weight: bold;
+                            width: 100px; height: 30px; font-size: 18px;" autocomplete="off"> PREDICT </BUtton>
+        </div>    
+        </form> 
+        
+    
+    </body>
+
+</html>
